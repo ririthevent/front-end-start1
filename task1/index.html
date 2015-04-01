@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>문제소스</title>
+	<link rel="stylesheet" href="quiz1.css">
+</head>
+<body>
+<div class="wrap">
+	<div id="main"></div>
+	<script type="text/template" id="photoTemplate">
+	  <a class = "photo" href='<%= photo.url %>'>
+	  <img src="<%= photo.img %>"></br>
+	  <%= photo.title %>
+	  </a>
+	</script>
+	<div class="Btn">
+		<button id="beforeBtn"><</button>
+		<div id = "page"></div>
+		<button id="nextBtn">></button>
+	</div>
+</div>
+<script src="quiz1_data.js"></script>
+<script src="quiz1_util.js"></script>
+<script src="tmpl.js"></script>
+<script src="quiz1.js"></script>
+</body>
+</html>
