@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>검색서비스</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>검색 서비스</h1>
+
+  <form  class="form-inline" onsubmit="return false">
+    <div class="input-group">
+      <input type="text" id = "serchString" class="form-control" placeholder="검색어를 넣어주세요">
+      <div class="input-group-addon">
+        <button class="btnbtn-primary" id="serchBtn">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+  </form>
+
+<!--데이터 로딩중일 때 로딩 이미지를 띄우기 위한 공간-->
+  <div id="loadingImage"></div>
+
+<!--검색할 종류를 정하기 위한 공간(tabs)-->  
+  <div id="tabs"></div>
+
+<!--검색한 결과를 출력하기 위한 공간 -->
+  <div class="mov-panel" style="margin-top:30px">
+		<ul id = print></ul>
+  </div>
+
+  <!-- 더보기 버튼을 넣기 위한 공간 -->
+  <div id="moreBtn"></div>
+
+
+</div>
+<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+<script src="test_json.js"></script>
+<script src="serch.js"></script>
+</body>
+</html>
